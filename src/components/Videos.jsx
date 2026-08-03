@@ -1,10 +1,14 @@
 import { Box, Stack } from "@mui/material";
 import { VideoCard, ChannelCard } from "./";
 
-function Videos({ videos }) {
+function Videos({ videos, direction }) {
+   if (!videos?.length) {
+    return "Loading...";
+  } 
+
   return (
     <Stack
-      direction={"row"}
+      direction={direction || "row"}
       sx={{ flexWrap: "wrap", justifyContent: "start", gap: 2 }}
     >
       {videos.map((item, idx) => (

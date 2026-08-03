@@ -20,7 +20,7 @@ function Navbar() {
       }}
     >
       <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
-        <img src={logo} alt="logo" height={45}/>
+        <img src={logo} alt="logo" height={60}/>
       </Link>
       <SearchBar />
     </Stack>
